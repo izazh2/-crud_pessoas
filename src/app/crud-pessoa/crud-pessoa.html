@@ -1,3 +1,35 @@
+<nav id="menu">
+    <ul>
+        <li><a href="../crud-pessoa/crud-pessoa.html">Formulario</a></li>
+        <li><a href="../src/app/consulta/consulta.html">Consulta</a></li>
+    </ul>
+</nav>
+
 <div id="div-form">
     <h3>Cadastro de Clientes</h3>
+
+    <form id="formulario">
+        <h4>Dados Pessoais</h4>
+
+        <label for="nome">Nome</label>
+        <input type="text" name="nome" id="nome" placeholder="Nome completo">
+
+        <label for="email">E-mail</label>
+        <input type="text" name="email" id="email" placeholder="E-mail">
+
+        <label for="cpf">CPF</label>
+        <input type="number" name="cpf" id="cpf" required maxlength="14" placeholder="CPF">
+
+        <label for="data-nascimento">Data de Nascimento</label>
+        <input type="date" name="data-nascimento" id="data-nascimento">
+
+        <label for="uf">UF</label>
+        <select name="uf" id="uf" [(ngModel)]="uf">
+            <option value="">Selecione um Estado</option>
+            @for(estado of estados){
+                <option [value]="estado">{{estado}}</option>
+            }
+        </select>
+
+    </form>
 </div>
