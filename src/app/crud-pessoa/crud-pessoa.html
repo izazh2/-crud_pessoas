@@ -25,10 +25,7 @@
 
         <label for="uf">UF</label>
         <select name="uf" id="uf" [(ngModel)]="uf">
-            <option value="">Selecione um Estado</option>
-            @for(estado of estados){
-                <option [value]="estado">{{estado}}</option>
-            }
+        
         </select>
 
     </form>

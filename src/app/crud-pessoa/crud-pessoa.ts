@@ -39,8 +39,29 @@ export class CrudPessoa {
     pessoa.municipio = this.municipio
 
     this.listaPessoas.push(pessoa)
-    
+    this.limparFormulario()
    }
 
+   editarPessoa(pessoa: Pessoa){
+    this.modoEdicao = true
+    this.pessoaEmEdicao = pessoa
+    this.nome = pessoa.nome
+    this.email = pessoa.email
+    this.cpf = pessoa.cpf
+    this.data_nascimento = pessoa.data_nascimento
+    this.uf = pessoa.uf
+    this.municipio = pessoa.municipio
+   }
+
+
+
+   limparFormulario(){
+
+   }
+
+   limparTudo(){
+    this.listaPessoas = []
+    this.limparFormulario()
+   }
    
 }
