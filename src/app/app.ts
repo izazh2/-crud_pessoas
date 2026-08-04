@@ -1,11 +1,10 @@
 import { Component, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { CrudPessoa } from './crud-pessoa/crud-pessoa';
-import { Consulta } from './consulta/consulta';
+import { Formulario } from './formulario/formulario';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, CrudPessoa, Consulta],
+  imports: [RouterOutlet, Formulario ],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
