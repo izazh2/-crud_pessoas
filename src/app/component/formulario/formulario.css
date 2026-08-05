@@ -11,9 +11,9 @@ label{
 }
 
 input, select{
-    height: 25px;
+    height: 40px;
     padding: 8px;
-    font-size: 25px;
+    font-size: 15px;
 }
 
 .elem-form-01{
