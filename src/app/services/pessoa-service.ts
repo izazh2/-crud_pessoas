@@ -16,4 +16,7 @@ export class PessoaService {
         return this.pessoas
     }
 
+    tamanhoArray(){
+        return this.pessoas.length
+    }
 }

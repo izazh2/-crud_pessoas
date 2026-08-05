@@ -18,9 +18,9 @@ export class Formulario {
   constructor(private pessoaService : PessoaService){}
 
   save(){
-    console.log(this.nome)
+    
     this.pessoaService.adicionar({
-      id: 1,
+      id: this.pessoaService.tamanhoArray() +1,
       nome: this.nome,
       email: this.email,
       cpf: this.cpf,
