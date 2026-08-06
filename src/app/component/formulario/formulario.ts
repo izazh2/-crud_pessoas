@@ -19,6 +19,7 @@ export class Formulario {
 
   save(){
     this.pessoaService.adicionar({
+      //id: calcula o ID como o tamanho do array + 1
       id: this.pessoaService.tamanhoArray() +1,
       nome: this.nome,
       email: this.email,
