@@ -18,7 +18,6 @@ export class Formulario {
   constructor(private pessoaService : PessoaService){}
 
   save(){
-    
     this.pessoaService.adicionar({
       id: this.pessoaService.tamanhoArray() +1,
       nome: this.nome,
